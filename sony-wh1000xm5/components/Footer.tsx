@@ -1,29 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Heart, Globe, Play, Camera, Users } from "lucide-react";
+import { ExternalLink, Globe, Play, Camera, Users } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const links = {
     Product: [
-      { label: "Features", href: "#features" },
-      { label: "Tech Specs", href: "#specs" },
-      { label: "Reviews", href: "#reviews" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "Tính Năng", href: "#features" },
+      { label: "Thông Số", href: "#specs" },
+      { label: "Giá", href: "#pricing" },
     ],
     Support: [
       { label: "FAQ", href: "#newsletter" },
-      { label: "Warranty", href: "#pricing" },
-      { label: "Returns", href: "#pricing" },
-      { label: "Contact", href: "#newsletter" },
+      { label: "Bảo Hành", href: "#pricing" },
+      { label: "Đổi trả", href: "#pricing" },
+      { label: "Liên hệ", href: "#newsletter" },
     ],
     Company: [
-      { label: "About Sony", href: "https://sony.com", external: true },
-      { label: "Press", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Sustainability", href: "#" },
+      { label: "Về Sony", href: "https://sony.com", external: true },
+      { label: "Báo chí", href: "#" },
+      { label: "Tuyển Dụng", href: "#" },
+      { label: "Bền vững", href: "#" },
     ],
   };
 
@@ -64,7 +63,7 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.8, maxWidth: 280, marginBottom: 28 }}>
-              Sony Electronics — pioneering audio technology since 1946. The WH-1000XM5 represents the pinnacle of wireless audio engineering.
+              Sony Electronics — tiên phong công nghệ âm thanh từ năm 1946. WH-1000XM5 là đỉnh cao của kỹ thuật âm thanh không dây.
             </p>
             {/* Socials */}
             <div style={{ display: "flex", gap: 12 }}>
@@ -137,10 +136,7 @@ export default function Footer() {
         {/* Divider */}
         <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: 32, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <p style={{ fontSize: 13, color: "var(--text-muted)" }}>
-            © {currentYear} Sony Electronics Inc. All rights reserved. WH-1000XM5 is a trademark of Sony.
-          </p>
-          <p style={{ fontSize: 13, color: "var(--text-muted)", display: "flex", alignItems: "center", gap: 4 }}>
-            Built with <Heart size={13} fill="#ff6b00" color="#ff6b00" /> for Helicorp Internship
+            © {currentYear} Sony Electronics Inc. Bảo lưu mọi quyền. WH-1000XM5 là thương hiệu của Sony.
           </p>
         </div>
       </div>

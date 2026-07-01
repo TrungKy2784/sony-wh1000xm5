@@ -9,51 +9,51 @@ import {
 const features = [
   {
     icon: Mic,
-    title: "8-Mic Array ANC",
-    subtitle: "Industry-Leading Noise Cancellation",
-    desc: "8 microphones paired with dual noise-canceling chips — QN1 HD + V1 — detect and eliminate ambient noise across all frequencies in real time.",
+    title: "Khử ồn 8 micro",
+    subtitle: "Khử ồn hàng đầu",
+    desc: "8 micro và hai chip khử ồn — QN1 HD + V1 — phát hiện và loại bỏ tiếng ồn nền ở mọi dải tần theo thời gian thực.",
     accent: "#ff6b00",
-    tag: "Flagship ANC",
+    tag: "ANC cao cấp",
   },
   {
     icon: Battery,
-    title: "30-Hour Battery",
-    subtitle: "All-Day, All-Night Listening",
-    desc: "30 hours with ANC on, 40 hours without. Quick Charge gives you 3 hours of playback from just 3 minutes of charging.",
+    title: "Pin 30 giờ",
+    subtitle: "Nghe cả ngày lẫn đêm",
+    desc: "30 giờ khi bật ANC, 40 giờ khi tắt. Sạc nhanh cho 3 giờ phát lại chỉ với 3 phút sạc.",
     accent: "#22c55e",
-    tag: "Ultra Endurance",
+    tag: "Pin bền bỉ",
   },
   {
     icon: Music,
-    title: "LDAC Hi-Res Audio",
-    subtitle: "Studio-Quality Wireless Sound",
-    desc: "LDAC codec transmits 3× more data than standard Bluetooth. Pair with DSEE Extreme AI to upscale compressed audio to near Hi-Res quality.",
+    title: "Âm thanh LDAC Hi-Res",
+    subtitle: "Âm thanh không dây chất lượng phòng thu",
+    desc: "LDAC truyền nhiều dữ liệu hơn Bluetooth tiêu chuẩn gấp 3 lần. Kết hợp với DSEE Extreme AI để nâng cấp âm thanh nén gần đạt chất lượng Hi-Res.",
     accent: "#8b5cf6",
-    tag: "Hi-Res Audio",
+    tag: "Âm thanh Hi-Res",
   },
   {
     icon: Cpu,
     title: "DSEE Extreme AI",
-    subtitle: "AI Audio Enhancement",
-    desc: "Machine learning analyzes the music genre and instruments in real time, restoring lost details from compressed streaming audio sources.",
+    subtitle: "Nâng cấp âm thanh bằng AI",
+    desc: "Học máy phân tích thể loại và nhạc cụ theo thời gian thực, khôi phục chi tiết đã mất từ nguồn nhạc nén.",
     accent: "#0066cc",
-    tag: "AI Powered",
+    tag: "AI thông minh",
   },
   {
     icon: Smartphone,
-    title: "Multipoint Connect",
-    subtitle: "Two Devices, Zero Friction",
-    desc: "Stay connected to two Bluetooth devices simultaneously. Seamlessly switch audio between your phone, laptop, or tablet without re-pairing.",
+    title: "Kết nối đa điểm",
+    subtitle: "Hai thiết bị, không gián đoạn",
+    desc: "Giữ kết nối với hai thiết bị Bluetooth cùng lúc. Chuyển audio mượt mà giữa điện thoại, laptop hoặc máy tính bảng mà không cần ghép đôi lại.",
     accent: "#ec4899",
-    tag: "Multipoint",
+    tag: "Đa điểm",
   },
   {
     icon: MessageSquare,
     title: "Speak-to-Chat",
-    subtitle: "Intelligent Auto-Pause",
-    desc: "Start speaking and the headphones automatically pause your music and activate ambient sound mode so you can have a conversation — hands free.",
+    subtitle: "Tạm dừng thông minh",
+    desc: "Khi bạn bắt đầu nói, tai nghe tự động tạm dừng nhạc và kích hoạt chế độ âm thanh xung quanh để bạn có thể trò chuyện mà không cần dùng tay.",
     accent: "#f59e0b",
-    tag: "Smart Feature",
+    tag: "Tính năng thông minh",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function Features() {
             borderRadius: 50, marginBottom: 20,
             border: "1px solid rgba(255,107,0,0.2)",
           }}>
-            Why WH-1000XM5
+            Tại sao WH-1000XM5
           </span>
           <h2 style={{
             fontFamily: "var(--font-space-grotesk)",
@@ -167,14 +167,14 @@ export default function Features() {
             fontWeight: 800, letterSpacing: "-1.5px",
             color: "var(--text-primary)", marginBottom: 20,
           }}>
-            Engineered for{" "}
-            <span className="gradient-text">Perfection</span>
+            Thiết kế cho{" "}
+            <span className="gradient-text">Sự Hoàn Hảo</span>
           </h2>
           <p style={{
             fontSize: 17, color: "var(--text-secondary)",
             maxWidth: 540, margin: "0 auto", lineHeight: 1.7,
           }}>
-            Every detail of the WH-1000XM5 has been refined to deliver an unmatched listening experience.
+            Mọi chi tiết của WH-1000XM5 đều được hoàn thiện để mang lại trải nghiệm nghe không gì sánh bằng.
           </p>
         </motion.div>
 

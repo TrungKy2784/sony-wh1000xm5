@@ -43,10 +43,9 @@ export default function Navbar() {
   };
 
   const links = [
-    { href: "#features", label: "Features" },
-    { href: "#specs", label: "Specs" },
-    { href: "#reviews", label: "Reviews" },
-    { href: "#pricing", label: "Pricing" },
+    { href: "#features", label: "Tính Năng" },
+    { href: "#specs", label: "Thông Số" },
+    { href: "#pricing", label: "Giá" },
   ];
 
   return (
@@ -150,7 +149,7 @@ export default function Navbar() {
                 cursor: "pointer", color: "var(--text-primary)",
                 transition: "all 0.3s ease",
               }}
-              aria-label="Toggle dark mode"
+              aria-label="Chuyển đổi chế độ sáng/tối"
             >
               <AnimatePresence mode="wait">
                 <motion.div
@@ -174,7 +173,7 @@ export default function Navbar() {
               style={{ padding: "10px 24px", fontSize: 14 }}
               id="nav-buy-now"
             >
-              Buy Now – $349
+              Mua Ngay – $349
             </motion.a>
 
             {/* Mobile menu */}
@@ -215,7 +214,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a href="#pricing" className="btn-primary" style={{ textAlign: "center", padding: "12px 24px" }}>
-                Buy Now – $349
+                Mua Ngay – $349
               </a>
             </div>
           </motion.div>

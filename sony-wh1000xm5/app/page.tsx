@@ -4,7 +4,9 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import TechSpecs from "@/components/TechSpecs";
 import Scrollytelling from "@/components/Scrollytelling";
-import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import NewsletterForm from "@/components/NewsletterForm";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
         <Features />
         <TechSpecs />
         <Scrollytelling />
-        <Testimonials />
+        <Pricing />
+        <NewsletterForm />
+        <Chatbot />
       </main>
       <Footer />
     </>

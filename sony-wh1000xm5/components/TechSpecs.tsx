@@ -32,8 +32,8 @@ const specs = [
     label: "Microphones",
     value: 8,
     suffix: "",
-    unit: "Mics",
-    desc: "Dual noise-canceling chip processing",
+    unit: "Cái",
+    desc: "Xử lý chống ồn kép",
     color: "#ff6b00",
     icon: "🎤",
   },
@@ -41,8 +41,8 @@ const specs = [
     label: "Battery Life",
     value: 30,
     suffix: "h",
-    unit: "Hours",
-    desc: "With noise canceling active",
+    unit: "Giờ",
+    desc: "Khi chống ồn kích hoạt",
     color: "#22c55e",
     icon: "🔋",
   },
@@ -51,7 +51,7 @@ const specs = [
     value: 30,
     suffix: "mm",
     unit: "Driver",
-    desc: "Carbon fiber composite dome",
+    desc: "Màng loa sợi carbon",
     color: "#8b5cf6",
     icon: "🔊",
   },
@@ -59,8 +59,8 @@ const specs = [
     label: "Quick Charge",
     value: 3,
     suffix: "min",
-    unit: "Charge",
-    desc: "= 3 hours of playback",
+    unit: "Sạc",
+    desc: "= 3 giờ phát nhạc",
     color: "#0066cc",
     icon: "⚡",
   },
@@ -68,8 +68,8 @@ const specs = [
     label: "Weight",
     value: 250,
     suffix: "g",
-    unit: "Grams",
-    desc: "Ultralight comfort design",
+    unit: "Gram",
+    desc: "Thiết kế siêu nhẹ, thoải mái",
     color: "#ec4899",
     icon: "⚖️",
   },
@@ -77,30 +77,30 @@ const specs = [
     label: "Bluetooth",
     value: 5,
     suffix: ".2",
-    unit: "Version",
-    desc: "Multipoint dual-device pairing",
+    unit: "Phiên bản",
+    desc: "Kết nối Multipoint hai thiết bị",
     color: "#f59e0b",
     icon: "📶",
   },
 ];
 
 const specRows = [
-  { label: "Model", value: "WH-1000XM5" },
-  { label: "Type", value: "Over-ear, closed" },
-  { label: "Frequency Response", value: "4Hz – 40,000Hz" },
-  { label: "Impedance", value: "48 Ω" },
-  { label: "Sensitivity", value: "102 dB/mW" },
-  { label: "Noise Canceling", value: "Industry-Leading ANC" },
-  { label: "Processors", value: "QN1 HD + V1 (Dual)" },
-  { label: "Codec Support", value: "LDAC, AAC, SBC" },
-  { label: "Bluetooth Version", value: "5.2" },
-  { label: "Bluetooth Profile", value: "A2DP, AVRCP, HFP, HSP" },
-  { label: "Battery (ANC on)", value: "30 hours" },
-  { label: "Battery (ANC off)", value: "40 hours" },
-  { label: "Quick Charge", value: "3 min → 3 hours" },
-  { label: "Charging Port", value: "USB-C" },
-  { label: "Weight", value: "250 g" },
-  { label: "Colors", value: "Midnight Black, Platinum Silver" },
+  { label: "Mẫu", value: "WH-1000XM5" },
+  { label: "Loại", value: "Chụp tai, đóng" },
+  { label: "Dải tần số", value: "4Hz – 40.000Hz" },
+  { label: "Trở kháng", value: "48 Ω" },
+  { label: "Độ nhạy", value: "102 dB/mW" },
+  { label: "Chống ồn", value: "ANC hàng đầu" },
+  { label: "Bộ xử lý", value: "QN1 HD + V1 (Đôi)" },
+  { label: "Hỗ trợ codec", value: "LDAC, AAC, SBC" },
+  { label: "Phiên bản Bluetooth", value: "5.2" },
+  { label: "Hồ sơ Bluetooth", value: "A2DP, AVRCP, HFP, HSP" },
+  { label: "Pin (ANC bật)", value: "30 giờ" },
+  { label: "Pin (ANC tắt)", value: "40 giờ" },
+  { label: "Sạc nhanh", value: "3 phút → 3 giờ" },
+  { label: "Cổng sạc", value: "USB-C" },
+  { label: "Trọng lượng", value: "250 g" },
+  { label: "Màu sắc", value: "Midnight Black, Platinum Silver" },
 ];
 
 export default function TechSpecs() {
@@ -136,15 +136,15 @@ export default function TechSpecs() {
             textTransform: "uppercase", padding: "6px 18px",
             borderRadius: 50, marginBottom: 20,
             border: "1px solid rgba(255,107,0,0.2)",
-          }}>Tech Specs</span>
+          }}>Thông số kỹ thuật</span>
           <h2 style={{
             fontFamily: "var(--font-space-grotesk)",
             fontSize: "clamp(32px, 5vw, 52px)",
             fontWeight: 800, letterSpacing: "-1.5px",
             color: "var(--text-primary)", marginBottom: 20,
           }}>
-            Numbers That{" "}
-            <span className="gradient-text">Speak</span>
+            Con số có thể{" "}
+            <span className="gradient-text">nói lên</span>
           </h2>
         </motion.div>
 
@@ -214,7 +214,7 @@ export default function TechSpecs() {
               fontFamily: "var(--font-space-grotesk)",
               fontSize: 20, fontWeight: 700, color: "var(--text-primary)",
             }}>
-              Full Specifications – Sony WH-1000XM5
+              Thông số đầy đủ – Sony WH-1000XM5
             </h3>
           </div>
           {specRows.map((row, i) => (

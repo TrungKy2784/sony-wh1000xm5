@@ -1,39 +1,39 @@
 "use client";
 
-import {useRef, useEffect, useState} from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Play, ChevronDown, Zap, Volume2 } from "lucide-react";
+import { Play, ChevronDown, Zap } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
-    const ref = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "end start"],
-    });
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
-    const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
-    const [imageLoaded, setImageLoaded] = useState(false);
-    const words = ["Silence", "Excellence", "Clarity", "Freedom"];
-    const [wordIndex, setWordIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const words = ["Tĩnh lặng", "Tuyệt hảo", "Trong trẻo", "Tự do"];
+  const [wordIndex, setWordIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-        setWordIndex((i) => (i + 1) % words.length);
-        }, 2500);
-        return () => clearInterval(interval);
-    }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((i) => (i + 1) % words.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
 
-    const stats = [
-        { value: "30hrs", label: "Battery Life" },
-        { value: "8", label: "Microphones" },
-        { value: "30mm", label: "Driver Unit" },
-        { value: "3min", label: "Quick Charge" },
-    ];
-    return (
-         <section
+  const stats = [
+    { value: "30giờ", label: "Thời lượng pin" },
+    { value: "8", label: "Micro" },
+    { value: "30mm", label: "Loa 30mm" },
+    { value: "3phút", label: "Sạc nhanh" },
+  ];
+  return (
+    <section
       ref={ref}
       id="hero"
       style={{
@@ -114,7 +114,7 @@ export default function Hero() {
               >
                 <Zap size={14} color="#ff6b00" />
                 <span style={{ fontSize: 13, fontWeight: 600, color: "#ff6b00" }}>
-                  World&apos;s Best ANC Headphones 2024
+                  Tai nghe ANC tốt nhất thế giới 2024
                 </span>
               </motion.div>
 
@@ -133,8 +133,6 @@ export default function Hero() {
                   letterSpacing: "-2px",
                 }}
               >
-                Silence.
-                <br />
                 <motion.span
                   key={wordIndex}
                   initial={{ opacity: 0, y: 20 }}
@@ -159,10 +157,10 @@ export default function Hero() {
                   maxWidth: 480,
                 }}
               >
-                Sony WH-1000XM5 redefines noise cancellation with{" "}
-                <strong style={{ color: "var(--text-primary)" }}>8 microphones</strong> and{" "}
-                <strong style={{ color: "var(--text-primary)" }}>dual processors</strong>.
-                Hear your music, not the world.
+                Sony WH-1000XM5 định nghĩa lại khả năng khử ồn với{" "}
+                <strong style={{ color: "var(--text-primary)" }}>8 micro</strong> và{" "}
+                <strong style={{ color: "var(--text-primary)" }}>hai bộ xử lý</strong>.
+                Nghe nhạc của bạn, không phải tiếng ồn bên ngoài.
               </motion.p>
 
               {/* CTAs */}
@@ -173,11 +171,11 @@ export default function Hero() {
                 style={{ display: "flex", gap: 16, flexWrap: "wrap" }}
               >
                 <a href="#pricing" className="btn-primary" id="hero-order-now">
-                  Order Now – $349
+                  Đặt Ngay – $349
                 </a>
                 <a href="#scrollytelling" className="btn-secondary" id="hero-watch-story">
                   <Play size={16} />
-                  Discover Story
+                  Khám Phá Câu Chuyện
                 </a>
               </motion.div>
 
@@ -232,9 +230,8 @@ export default function Hero() {
                 />
               )}
 
-              {/* Floating product */}
+              {/* product */}
               <motion.div
-                className="animate-float"
                 style={{ width: "90%", position: "relative" }}
               >
                 <Image
@@ -253,50 +250,6 @@ export default function Hero() {
                   onLoad={() => setImageLoaded(true)}
                 />
               </motion.div>
-
-              {/* Sound wave badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1, type: "spring" }}
-                style={{
-                  position: "absolute", bottom: "10%", left: "0",
-                  background: "var(--bg-card)",
-                  border: "1px solid var(--border-color)",
-                  borderRadius: 16, padding: "12px 16px",
-                  boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
-                  display: "flex", alignItems: "center", gap: 10,
-                }}
-              >
-                <div style={{
-                  width: 36, height: 36, borderRadius: "50%",
-                  background: "rgba(255,107,0,0.15)",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                }}>
-                  <Volume2 size={18} color="#ff6b00" />
-                </div>
-                <div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text-primary)" }}>LDAC Hi-Res</div>
-                  <div style={{ fontSize: 11, color: "var(--text-muted)" }}>3× Bluetooth quality</div>
-                </div>
-              </motion.div>
-
-              {/* ANC badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1.2, type: "spring" }}
-                style={{
-                  position: "absolute", top: "15%", right: "0",
-                  background: "linear-gradient(135deg, #ff6b00, #ff8c3a)",
-                  borderRadius: 16, padding: "12px 16px",
-                  boxShadow: "0 8px 32px rgba(255,107,0,0.3)",
-                  color: "#fff",
-                }}
-              >
-                <div style={{ fontSize: 12, fontWeight: 800 }}>#1 ANC</div>
-                <div style={{ fontSize: 10, opacity: 0.85 }}>Industry Leader</div>
-              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -314,7 +267,7 @@ export default function Hero() {
         }}
       >
         <span style={{ fontSize: 11, color: "var(--text-muted)", letterSpacing: "2px", textTransform: "uppercase" }}>
-          Scroll
+          Cuộn xuống
         </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
@@ -333,5 +286,5 @@ export default function Hero() {
         }
       `}</style>
     </section>
-    );
+  );
 };

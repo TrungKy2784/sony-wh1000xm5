@@ -7,39 +7,39 @@ import Image from "next/image";
 const scenes = [
   {
     id: 1,
-    badge: "01 / Noise Cancellation",
-    title: "The World Goes Quiet",
-    body: "8 microphones and two dedicated processors analyze noise across every frequency band. The result: near-total silence — on planes, trains, and busy offices.",
+    badge: "01 / Chống ồn",
+    title: "Thế giới chìm vào im lặng",
+    body: "8 micro và hai bộ xử lý riêng phân tích tiếng ồn ở mọi dải tần. Kết quả: gần như im lặng tuyệt đối — trên máy bay, tàu hỏa và văn phòng đông đúc.",
     accent: "#ff6b00",
-    stat: "8 Mics",
-    statLabel: "Noise-canceling array",
+    stat: "8 mic",
+    statLabel: "Hệ thống chống ồn",
   },
   {
     id: 2,
-    badge: "02 / Audio Quality",
-    title: "Music as the Artist Intended",
-    body: "LDAC transmits audio at up to 990 kbps — three times more than standard Bluetooth. DSEE Extreme AI restores compressed audio to near Hi-Res quality on the fly.",
+    badge: "02 / Chất lượng âm thanh",
+    title: "Âm nhạc đúng như nghệ sĩ mong muốn",
+    body: "LDAC truyền âm thanh lên tới 990 kbps — gấp ba lần Bluetooth thông thường. DSEE Extreme AI phục hồi nhạc nén gần chuẩn Hi-Res ngay tức thì.",
     accent: "#8b5cf6",
-    stat: "990kbps",
-    statLabel: "LDAC transfer rate",
+    stat: "990 kbps",
+    statLabel: "Tốc độ truyền LDAC",
   },
   {
     id: 3,
-    badge: "03 / Battery Life",
-    title: "Never Miss a Beat",
-    body: "30 hours with ANC. 40 hours without. And when you're running low, 3 minutes of USB-C charging gives you 3 full hours of music. Power that lasts longer than your journey.",
+    badge: "03 / Thời lượng pin",
+    title: "Không bỏ lỡ một nhịp nào",
+    body: "30 giờ với ANC. 40 giờ khi tắt. Khi sắp hết pin, sạc USB-C 3 phút cho bạn 3 giờ nghe nhạc đầy đủ. Năng lượng kéo dài hơn hành trình của bạn.",
     accent: "#22c55e",
-    stat: "40hrs",
-    statLabel: "Maximum battery life",
+    stat: "40 giờ",
+    statLabel: "Thời lượng pin tối đa",
   },
   {
     id: 4,
-    badge: "04 / Smart Connection",
-    title: "Seamlessly in Sync",
-    body: "Multipoint technology keeps you connected to your phone and laptop at the same time. Speak-to-Chat pauses music automatically when you start a conversation.",
+    badge: "04 / Kết nối thông minh",
+    title: "Luôn đồng bộ mượt mà",
+    body: "Công nghệ Multipoint giữ bạn kết nối với điện thoại và máy tính cùng lúc. Speak-to-Chat tự động dừng nhạc khi bạn bắt đầu trò chuyện.",
     accent: "#0066cc",
     stat: "×2",
-    statLabel: "Simultaneous devices",
+    statLabel: "Thiết bị đồng thời",
   },
 ];
 
@@ -196,21 +196,21 @@ export default function Scrollytelling() {
             textTransform: "uppercase", padding: "6px 18px",
             borderRadius: 50, marginBottom: 20,
             border: "1px solid rgba(255,107,0,0.2)",
-          }}>The Story</span>
+          }}>Câu chuyện</span>
           <h2 style={{
             fontFamily: "var(--font-space-grotesk)",
             fontSize: "clamp(32px, 5vw, 52px)",
             fontWeight: 800, letterSpacing: "-1.5px",
             color: "var(--text-primary)", marginBottom: 20,
           }}>
-            Four Reasons to{" "}
-            <span className="gradient-text">Choose XM5</span>
+            Bốn lý do để{" "}
+            <span className="gradient-text">chọn XM5</span>
           </h2>
           <p style={{
             fontSize: 17, color: "var(--text-secondary)",
             maxWidth: 480, margin: "0 auto", lineHeight: 1.7,
           }}>
-            Scroll through the story of how every detail was engineered to perfection.
+            Kéo xuống để khám phá câu chuyện về cách từng chi tiết được thiết kế hoàn hảo.
           </p>
         </motion.div>
 
